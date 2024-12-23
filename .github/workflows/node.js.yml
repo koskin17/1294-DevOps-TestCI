@@ -12,7 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: 1294-DevOps-TestCI
+    runs-on: self-hosted
 
     strategy:
       matrix:
