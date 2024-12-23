@@ -12,5 +12,5 @@ jobs:
     steps:
       - run: echo "My name ${{ vars.MY_NAME }}."
       - run: echo "My secret name ${{ secrets.MY_SECRET_NAME }} by GitHub!"
-      - run: echo "My env = ${{ DAY_OF_WEEK }}"
+      - run: echo "My env = ${{ env.DAY_OF_WEEK }}"
 
