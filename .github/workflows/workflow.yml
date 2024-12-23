@@ -29,6 +29,5 @@ jobs:
       run: 'mvn compile'
     - name: Build application
       run: 'mvn package -DskipTests'
-	  
     - name: Test application
       run: 'mvn test'
