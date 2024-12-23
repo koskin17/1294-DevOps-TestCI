@@ -8,6 +8,6 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "My name ${{ vars.MY_NAME }} event."
+      - run: echo "My name ${{ vars.MY_NAME }}."
       - run: echo "My secret name ${{ secrets.MY_SECRET_NAME }} by GitHub!"
 
