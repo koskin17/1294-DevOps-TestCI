@@ -1,6 +1,8 @@
 name: GA Demo
 
 run-name: ${{ github.actor }} is testing out GitHub Actions
+env:
+  DAY_OF_WEEK: Thuesday
 on:
   push:
   workflow_dispatch:
@@ -10,4 +12,5 @@ jobs:
     steps:
       - run: echo "My name ${{ vars.MY_NAME }}."
       - run: echo "My secret name ${{ secrets.MY_SECRET_NAME }} by GitHub!"
+      - run: echo "My env = $DAY_OF_WEEK"
 
