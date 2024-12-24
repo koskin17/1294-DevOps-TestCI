@@ -24,7 +24,7 @@ jobs:
     - name: Show directory
       run: 'pwd'
     - name: List files
-      run: 'ls -al'
+      run: 'dir'
     - name: Install Dependencies
       run: 'mvn compile'
     - name: Build application
